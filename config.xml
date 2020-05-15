@@ -1,5 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.webzin.eprescription" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.webzin.eprescription"
+    versionCode = "10"
+    version     = "1.0.0" >
+
     <name>E Prescription</name>
     <description>
        Medicine Prescription made easy
@@ -7,10 +13,8 @@
     <author email="info@webzin.in" href="http://www.webzin.in">
         Webzin Team
     </author>
-    <content src="index.html" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
-     <!-- all platforms -->
+
+  <!-- all platforms -->
   <preference name="phonegap-version" value="cli-9.0.0" />
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
@@ -22,8 +26,11 @@
   <preference name="exit-on-suspend" value="true" />
   <preference name="deployment-target" value="7.0" />
 
-
-<platform name="ios">
+ 
+    
+    
+  <!-- Icons and Splash Screens -->
+ <platform name="ios">
 <icon src="res/icon/ios/icon-1024.png" width="1024" height="1024"/>
 <icon src="res/icon/ios/icon-small.png" width="29" height="29"/>
 <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58"/>
@@ -53,6 +60,7 @@
 <splash src="res/screen/ios/Default@2x~ipad~comany.png"/>
  
 </platform>
+
 <platform name="android">
 <preference name="SplashMaintainAspectRatio" value="true"/>
 <preference name="SplashShowOnlyFirstTime" value="true"/>
@@ -72,19 +80,8 @@
 <!--  Landscape  -->
  
 </platform>
-
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
+    
+    
+  <icon src="icon.png" />
+  <splash src="splash.png" />
 </widget>
